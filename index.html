@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
 <link rel="stylesheet" href="styles.css">
-
+<title>Portfolio</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+</head>
 <body>
-
+    <header class="header1">
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#projets">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>    
+    </header>
     <center>
-        <div class="banner">
-            <div class="t8trs">
+        <!-- <div class="banner"> -->
+            <div class="name">
                 <div class="header_border">
                     <p class="glitch">
                         <span aria-hidden="true">Briana Clarkson Griggs</span>
@@ -15,11 +26,11 @@
                       </p>
                 </div>
             </div>
-        </div>
+        
         
         <div class="font_color">
             <div class="title_glow"><h1>About Me</h1></div>
-            <p>Hello! My name is Briana and I am an upcoming Software Developer.
+            <p>Hello! My name is Briana and I am a Software Development apprentice.
                 I am currently attending Base Camp Coding Academy as a part of the
                 Graduate Institute where they are teaching me many languages to prepare
                 me for entering the field of Software Development. As of right now, I have
@@ -28,60 +39,52 @@
                 that I have learned from BCCAGI and take my creativity to the next level!
             </p>
         </div>
-        <div class="skills">
+        
+        <div class="skills">    
             <div class="title_glow"><h1>Skills</h1></div>
-            <p>-Python -Adobe Illustrator -Adobe InDesign -Adobe Photoshop
-                -Html/CSS -Javascript -C++ -Django
-            </p>
-
+            <div class="icons">
+            
+            <i class="devicon-python-plain colored"></i>
+            <i class="devicon-html5-plain"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-django-plain"></i>
+            <i class="devicon-javascript-plain colored"></i>
+          
+          
+          
+          </div>
+       </div>
     </center>
+    <div class="cityscape">
     <div class="item">
         <a href="Unit_1_project.py">
-            <div class="glitch_1">
         <img src="Images/HorrorMaze.png" />
-        <div class="glitch__layers">
-            <div class="glitch__layer"></div>
-            <div class="glitch__layer"></div>
-            <div class="glitch__layer"></div>
-        </div></div></a>
+        </a>
         <div class="title_glow"><h2>Unit 1 Project: Maze of Horrors</h2></div>
         <span class="caption">This was my first group project. Though I was on my honeymoon, that
             did not stop me and my group from communicating and working on the project.
             We decided that we would make a horror maze program. There would be 4 ways
             to enter the maze but only 2 would lead to the center. My path, the west path,
             was the shortest and deadliest route but in my opinion I think it was the
-            most fun part to code. While a user journeyed through the maze they would
-            have opportunities to encounter creatures which could kill the users and end
-            their journey. But there are also items that the user can find through the maze
-            that can defeat creatures but the item varies per creature so the user has to hope
-            that they have the correct item. Creatures are not the only way the user can die in
-            the maze. Along with creatures, the maze contains actual "dead" ends that
-            will open up and swallow the user and instant kill you. But there are
-        other dead ends that are not deadly at all that the user can run into. These dead ends
-    actually allow the user to restart the maze and try again meanwhile death means no restart
-and game over.</span>
+            most fun part to code. </span>
     </div>
+
+
     <div class="item">
         <a href="Unit_2_project.py">
         <img src="Images/Showmethecarfacts.png" /></a>
         <div class="title_glow"><h2>Unit 2 Project: Solksvwagen Sales Management System</h2></div>
         <span class="caption">This was my second group project. My team wanted to make
-            a program that seemed more realistic so we came up with a program that would
-            manage cars. Along with viewing cars, the program also has set admins
-            that can edit the car system while the customers can browse it. With customer
-            privileges, the user can create an account and browse cars by year, price,
-            and color. With administrative privileges, which are already set in the program,
-            admins can promote a customer to a moderator.With moderator privileges the user
-            can manage admin users as well as manage the stock by adding and removing to the
-            stock.With managing other users, administrators can search for users, display all
-            users, promote users, demote users, or delete users. As a moderator the user cannot
-            demote or promote but can delete users. If an admin demotes a moderator, they become
-            a customer. A really fun part about this project is that we learned hashing which was
-            an advanced skill for storing and saving passwords.
+            a program that seemed more realistic, so our solution was a program that would
+            manage the totally "real"-iable Solkswagens vehicles. 
+            Along with viewing cars, the program also has set admins
+            that can edit the car system and promote customers to moderators
+            while the customers can browse it. 
         </span>
     </div>
+    
     <div class="item">
-        <a href= "https://bri-griggs.github.io/The-GOAT/">
+        <a href= "https://bri-griggs.github.io/The-GOAT/" target="_blank">
         <img src="Images/smorecover.JPG" /></a>
         <div class="title_glow"><h2>First Website: The GOAT</h2></div>
         <span class="caption">For our first project in html and CSS, my class was tasked with making a webpage
@@ -98,7 +101,7 @@ and game over.</span>
                 <div class="title_glow"><h2>Resume</h2></div>
             </a>
         </div> -->
-        <a href="/Resume/Programming_Resume .pdf">
+        <a href="/Resume/Programming_Resume .pdf" target="_blank">
         <button class="cybr-btn">
         
            <span aria-hidden>Resume</span>
@@ -107,15 +110,24 @@ and game over.</span>
             <span aria-hidden class="cybr-btn__tag">BCG</span>
           </button>
         </a>
-          <div class="linked_in">
+          <!-- <div class="linked_in">
         <a href="https://www.linkedin.com/in/briana-clarkson-griggs-3189b2293/">
         <img src="Images/linkedin-logo-square2-purple.png"></a>
-       </div>
+       </div> -->
+    <div class="social_box">
+        <a href="https://www.linkedin.com/in/briana-clarkson-griggs-3189b2293/" target="_blank">
+        <img src="Images/linkedin-logo-square2-purple.png"> 
+        <img src="Images/github-153-675523.png">
+    </a></div>
+    <!-- <div class="column">
+        <img src="Images/github-153-675523.png" alt="github" style="width:30%">
+    </div>   -->
+
           
           
        
     </center>
 
 </body>
-
+</div>
 </html>
