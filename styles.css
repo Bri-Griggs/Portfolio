@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+/* <----------gradient------> */
 body{ 
       height: 1000px;
       background-color:black;
@@ -5,6 +7,8 @@ body{
         rgb(0, 0, 0));
      
 }
+
+
 /* /body{background-image:url(Images/cityscape2.jpg);
   background-color: rgba(75, 65, 65, 0.668);
   background-repeat: no-repeat;
@@ -12,6 +16,7 @@ body{
   background-blend-mode:multiply; */ */
     /* height: 2000px; */
     
+    /* <----------nav bar at top of page------> */
 .topnav {
     background-color: black;
     overflow: hidden;
@@ -27,6 +32,7 @@ body{
     font-size: 17px;
   }
   
+  /*
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #ce13af;  
@@ -38,7 +44,11 @@ body{
     background-color: violet 10px 5px 5px;
     color: white;
   }
+ /* <----------cyber font for paragraphs------> */ 
+  .new_font{font-family: "rajdhani", sans-serif;line-height:2em ;
+  color: whitesmoke}
 
+  /* <----------name eclipse------> */
 .header_border{border-color: black; background-color: black;
 border: solid rgb(0, 0, 0);
 box-shadow: violet 10px 5px 5px;
@@ -48,6 +58,7 @@ margin-right:325px;
 width:200px;
 height:200px;}
 
+/* <----------glow for headers------> */
 .title_glow{color:whitesmoke;
     text-shadow: 2px 2px 5px rgb(174, 112, 245);}
       
@@ -57,6 +68,8 @@ height:200px;}
 background-color: rgba(75, 65, 65, 0.668);
     background-blend-mode:multiply;} */
 
+
+    /* <----------skills boxes------> */
     .skills{color:whitesmoke; background-color: #0f0d0d8a;
         /* border: solid rgb(10, 227, 238); */
         box-shadow: violet 10px 5px 5px;
@@ -70,10 +83,19 @@ background-color: rgba(75, 65, 65, 0.668);
     padding-right: 10px;
     padding-left: 10px;
 padding-bottom: 3px;}
+
+
+
+
 .icons{
   font-size: 4em;
-
+  padding:1%;
+  overflow-x:hidden;
 }
+
+  /* .icons:hover{
+    box-shadow: 0 0 8px rgba(238, 117, 210, 0.6);
+  } */
 
 
 .font_color{color:whitesmoke; background-color: #0f0d0d2f;
@@ -105,28 +127,21 @@ background-color: #0f0d0d8a;
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 475px;
+    width: 30%; 
 }
 img {
     width: 380px;
     height: 300px;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 50%;
+    /* box-shadow: 6px 6px 5px #000000; */
 }
 .caption {
     display: block;
 }
 
-.resume{color:whitesmoke; background-color: #0f0d0d8a;
-    border: dotted rgb(38, 225, 246);
-    box-shadow: rgb(65, 29, 243) 10px 5px 5px;
-    border-radius: 5%;
-    margin-left: 400px;
-    margin-right: 400px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    }
-
+/* <----------name glitch------> */
 
 .name{
         color: white;
@@ -211,6 +226,8 @@ img {
         box-sizing: border-box;
       }
     
+
+      /* <----------city drawing------> */
  .cityscape{background-image: url(Images/cityscape3.jpg);
         background-attachment: fixed;
         background-size: 100% 100%;
@@ -219,20 +236,20 @@ img {
         background-blend-mode:multiply;}
       
 
+ /* <----------socials for contact------> */ 
 .social_box{
   display:flex;
   justify-content: space-around;
-  margin: 10em; 
-
+  margin: 10em;
+  overflow-x: hidden;
+  }
   
+
+
+/* --------- Responsiveness ---------------- */
+
+@media only screen and (max-width: 600px) {
+  .new_font{
+    font-size: 300px;
+  }
 }
-            /* .row {
-                display: flex;
-              
-              }
-              .column {
-                width:2em;
-                flex: 33.33%;
-                width:0%; */
-              /* } */
-/* .font_color{color:crimson} */  
