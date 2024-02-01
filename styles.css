@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 /* <----------gradient------> */
+/* *{
+  margin: 0px;
+} */
 body{ 
-      height: 1000px;
+      height: 100%;
       background-color:black;
       background-image: linear-gradient( rgb(29, 10, 32),rgb(10, 1, 10),
         rgb(0, 0, 0));
@@ -13,12 +16,12 @@ body{
   background-color: rgba(75, 65, 65, 0.668);
   background-repeat: no-repeat;
   background-size:1520px 1830px;
-  background-blend-mode:multiply; */ */
+  background-blend-mode:multiply; */ 
     /* height: 2000px; */
     
     /* <----------nav bar at top of page------> */
 .topnav {
-    background-color: black;
+    /* background-color: rgba(0, 0, 0, 0.14); */
     overflow: hidden;
   }
   
@@ -45,7 +48,7 @@ body{
     color: white;
   }
  /* <----------cyber font for paragraphs------> */ 
-  .new_font{font-family: "rajdhani", sans-serif;line-height:2em ;
+  .new_font{font-family: "rajdhani", sans-serif;line-height:2em ; text-align: center;
   color: whitesmoke}
 
   /* <----------name eclipse------> */
@@ -54,20 +57,14 @@ border: solid rgb(0, 0, 0);
 box-shadow: violet 10px 5px 5px;
 border-radius: 50%;
 margin-bottom: 3%;
-margin-right:325px;
 width:200px;
 height:200px;}
 
 /* <----------glow for headers------> */
-.title_glow{color:whitesmoke;
-    text-shadow: 2px 2px 5px rgb(174, 112, 245);}
+.title_glow{color:whitesmoke; font-size: 1.3em;
+    text-shadow: 2px 2px 5px rgb(174, 112, 245);text-align: center;}
       
-  /* .banner{background-image: url(Images/cityscape.jpg);
-    background-size: 1500px 600px;
-    background-repeat: no-repeat;
-background-color: rgba(75, 65, 65, 0.668);
-    background-blend-mode:multiply;} */
-
+  
 
     /* <----------skills boxes------> */
     .skills{color:whitesmoke; background-color: #0f0d0d8a;
@@ -91,6 +88,7 @@ padding-bottom: 3px;}
   font-size: 4em;
   padding:1%;
   overflow-x:hidden;
+  text-align: center;
 }
 
   /* .icons:hover{
@@ -112,7 +110,7 @@ padding-left: 300px;}
 
 .item {
     position: relative;
-    margin-top: 30px;
+    margin-top: 4em;
     margin-left: 10px;
     margin-right: 10px;
     color:whitesmoke;
@@ -124,14 +122,13 @@ background-color: #0f0d0d8a;
     padding-bottom: 6%;
     box-shadow: rgb(198, 136, 224) 10px 5px 5px;
     border-radius: 5%;
-    vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 30%; 
+    width:31%; 
 }
 img {
-    width: 380px;
-    height: 300px;
+    width: 20em;
+    height: 16em;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 50%;
@@ -154,7 +151,7 @@ img {
         text-align: center;
       }
       
-      .glitch {
+      .glitch {text-align: center;
         font-size: 2rem;
         font-weight: bold;
         text-transform: uppercase;
@@ -231,8 +228,9 @@ img {
  .cityscape{background-image: url(Images/cityscape3.jpg);
         background-attachment: fixed;
         background-size: 100% 100%;
-        background-repeat: no-repeat;
-    background-color: rgba(75, 65, 65, 0.668);
+        margin: 0px;
+        padding:0;
+        background-color: rgba(75, 65, 65, 0.668);
         background-blend-mode:multiply;}
       
 
@@ -244,12 +242,26 @@ img {
   overflow-x: hidden;
   }
   
-
-
 /* --------- Responsiveness ---------------- */
 
-@media only screen and (max-width: 600px) {
-  .new_font{
-    font-size: 300px;
-  }
+@media screen and (max-width: 1060px) {
+  #primary { width:70%; height:60%; }
+  .font_color{font-size: 99%; width:150%; margin-left:-25%;}
+  .item{width:30.5%;display: inline-block;position: relative;}
+  img{width:74%;}
+  .skills{width:70%;text-align: center; margin-left:16%;}  
+  .header_border{width:21%}
+  #secondary { width:30%; margin-left:3%;}  
+}
+
+@media screen and (max-width: 600px) {
+  #primary { width:50%; height:60%; }
+
+  .title_glow{font-size:60%;text-align: center;}
+  .font_color{font-size:40%; white-space: pre; margin-left:-45%;text-align: center;}
+  .item{width:27.5%;display: inline-block;position: relative;}
+  img{width:80%;}
+  /* .skills{font-size:1em;60%;text-align: center; margin-left:16%;}   */
+  .icons{font-size: 3em;}
+  #secondary { width:30%; margin-left:3%;}  
 }
