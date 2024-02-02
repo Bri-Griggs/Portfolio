@@ -21,8 +21,12 @@ body{
     
     /* <----------nav bar at top of page------> */
 .topnav {
-    /* background-color: rgba(0, 0, 0, 0.14); */
+    background-color: rgba(107, 33, 98, 0.497);
+    border-radius: 5%;
+    width:100%;
     overflow: hidden;
+    position:fixed;
+    z-index:1;
   }
   
   /* Style the links inside the navigation bar */
@@ -58,7 +62,8 @@ box-shadow: violet 10px 5px 5px;
 border-radius: 50%;
 margin-bottom: 3%;
 width:200px;
-height:200px;}
+height:200px;
+margin-top:5%;}
 
 /* <----------glow for headers------> */
 .title_glow{color:whitesmoke; font-size: 1.3em;
@@ -69,7 +74,8 @@ height:200px;}
     /* <----------skills boxes------> */
     .skills{color:whitesmoke; background-color: #0f0d0d8a;
         /* border: solid rgb(10, 227, 238); */
-        box-shadow: violet 10px 5px 5px;
+        /* box-shadow: violet 10px 5px 5px; */
+        box-shadow: 7px 10px 18px #ec63c3;
         border-radius: 5%;
         margin-top: 100px;
         margin-left: 400px;
@@ -120,7 +126,7 @@ background-color: #0f0d0d8a;
     padding-left: 1%;
     padding-right: 1%;
     padding-bottom: 6%;
-    box-shadow: rgb(198, 136, 224) 10px 5px 5px;
+    box-shadow: rgb(220, 49, 200) 10px 5px 5px;
     border-radius: 5%;
     display: inline-block;
     text-align: center;
