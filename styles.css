@@ -246,26 +246,77 @@ img {
   overflow-x: hidden;
   }
   
-/* --------- Responsiveness ---------------- */
+/* --------- Responsiveness  1060px---------------- */
 
 @media screen and (max-width: 1060px) {
-  #primary { width:70%; height:60%; }
+  #primary { width:60%; height:60%; }
+  .item{width:30.5%;display: inline-block;position: relative;}
+  .item h2{font-size: 1.2em;}
+  #projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .new_font{font-size: 1em;
+  line-height: .8em;}
   .font_color{font-size: 99%; width:150%; margin-left:-25%;}
   .item{width:30.5%;display: inline-block;position: relative;}
   img{width:74%;}
   .skills{width:70%;text-align: center; margin-left:16%;}  
   .header_border{width:21%}
   #secondary { width:30%; margin-left:3%;}  
+
+}
+
+@media screen and (max-width: 768px) {
+#primary { width:60%; height:60%; }
+.item{
+  width:100%;
+  display: inline-block;
+  position: relative;
+}
+#projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+img{width:74%;}
+.skills{font-size:1em;;text-align: center; margin-left:16%;}  
+.icons{font-size: 3em;}
+#secondary { width:30%; margin-left:3%;}
 }
 
 @media screen and (max-width: 600px) {
-  #primary { width:50%; height:60%; }
 
-  .title_glow{font-size:60%;text-align: center;}
-  .font_color{font-size:40%; white-space: pre; margin-left:-45%;text-align: center;}
-  .item{width:27.5%;display: inline-block;position: relative;}
-  img{width:80%;}
-  /* .skills{font-size:1em;60%;text-align: center; margin-left:16%;}   */
+  #primary { width:60%; height:60%; }
+  .item{
+    width:100%;
+    display: inline-block;
+    position: relative;
+  }
+ .header_border{width:50%}
+
+  p.new_font {
+    font-size: 1.5em;
+    line-height: .9em;
+    width: 250%;
+    margin-left: -70%;
+  }
+  #projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  img{width:74%;}
+  .skills{font-size:1em;text-align: center; margin-left:16%;}  
   .icons{font-size: 3em;}
-  #secondary { width:30%; margin-left:3%;}  
+  #secondary { width:30%; margin-left:3%;}
+}
+
+@media screen and (max-width: 550px) {
+  p.new_font {
+    font-size: 1.5em;
+    line-height: 1.2em;
+
+  }
 }
